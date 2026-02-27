@@ -1,0 +1,9 @@
+{
+	"id": "copy-file-path",
+	"name": "Copy File Path",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Copies the absolute system file path of the current note to the clipboard.",
+	"author": "Robert Stickler",
+	"isDesktopOnly": false
+}
