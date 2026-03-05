@@ -45,15 +45,12 @@ bun run dev
 bun run build
 ```
 
-## Part of the BytesAndParty Plugin Suite
+## Works Well with Other BytesAndParty Plugins
 
-This plugin works great alongside other plugins from the same author:
-
-- [Auto Categories](https://github.com/BytesAndParty/Obsidian_AutoCategories) - Automatically create category pages from frontmatter
-- [Better Gitignore](https://github.com/BytesAndParty/BetterGitignore) - Beautiful .gitignore editor with templates
-- [Command Overview](https://github.com/BytesAndParty/CommandOverview) - Quick command palette with shortcuts
-- [Company Knowledge Hub](https://github.com/BytesAndParty/CompanyKnowledgeHub) - Publish notes to a shared knowledge base
-- [Customer Tag Sorter](https://github.com/BytesAndParty/CustomerTag) - Organize notes by customer tags
+- [Command Overview](https://github.com/BytesAndParty/CommandOverview) - Keep "Copy absolute file path" in a central shortcut overlay.
+- [Customer Tag Sorter](https://github.com/BytesAndParty/CustomerTag) - Quickly verify new file locations after automatic customer-based moves.
+- [Company Knowledge Hub](https://github.com/BytesAndParty/CompanyKnowledgeHub) - Share exact source file paths during publish/review collaboration.
+- [Auto Categories](https://github.com/BytesAndParty/Obsidian_AutoCategories) - Copy paths from generated category pages for automation or scripting.
 
 ## License
 
