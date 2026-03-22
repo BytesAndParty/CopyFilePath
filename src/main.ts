@@ -1,4 +1,5 @@
 import { Notice, Plugin, TFile } from 'obsidian';
+import * as path from 'path';
 
 export default class CopyFilePathPlugin extends Plugin {
 
@@ -21,7 +22,7 @@ export default class CopyFilePathPlugin extends Plugin {
 
 	private async copyAbsolutePath(file: TFile) {
 		const vaultPath = (this.app.vault.adapter as any).basePath;
-		const absolutePath = `${vaultPath}/${file.path}`;
+		const absolutePath = path.join(vaultPath, file.path);
 
 		await navigator.clipboard.writeText(absolutePath);
 		new Notice('Path copied to clipboard');
