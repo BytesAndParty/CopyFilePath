@@ -6,5 +6,5 @@
 	"description": "Copies the absolute system file path of the current note to the clipboard.",
 	"author": "Robert Stickler",
 	"authorUrl": "https://github.com/BytesAndParty",
-	"isDesktopOnly": false
+	"isDesktopOnly": true
 }

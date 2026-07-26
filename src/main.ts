@@ -1,4 +1,4 @@
-import { Notice, Plugin, TFile } from 'obsidian';
+import { FileSystemAdapter, Notice, Plugin, TFile } from 'obsidian';
 import * as path from 'path';
 
 export default class CopyFilePathPlugin extends Plugin {
@@ -21,10 +21,21 @@ export default class CopyFilePathPlugin extends Plugin {
 	}
 
 	private async copyAbsolutePath(file: TFile) {
-		const vaultPath = (this.app.vault.adapter as any).basePath;
+		const adapter = this.app.vault.adapter;
+		if (!(adapter instanceof FileSystemAdapter)) {
+			new Notice('Copy File Path is only supported on Desktop.');
+			return;
+		}
+
+		const vaultPath = adapter.getBasePath();
 		const absolutePath = path.join(vaultPath, file.path);
 
-		await navigator.clipboard.writeText(absolutePath);
-		new Notice('Path copied to clipboard');
+		try {
+			await navigator.clipboard.writeText(absolutePath);
+			new Notice('Path copied to clipboard');
+		} catch (error) {
+			console.error('[CopyFilePath] Failed to copy path:', error);
+			new Notice('Failed to copy path to clipboard');
+		}
 	}
 }
