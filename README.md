@@ -48,7 +48,6 @@ bun run build
 ## Works Well with Other BytesAndParty Plugins
 
 - [Command Overview](https://github.com/BytesAndParty/CommandOverview) - Keep "Copy absolute file path" in a central shortcut overlay.
-- [Customer Tag Sorter](https://github.com/BytesAndParty/CustomerTag) - Quickly verify new file locations after automatic customer-based moves.
 - [Auto Categories](https://github.com/BytesAndParty/Obsidian_AutoCategories) - Copy paths from generated category pages for automation or scripting.
 
 ## License
