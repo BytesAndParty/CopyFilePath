@@ -4,9 +4,10 @@ An Obsidian plugin that copies the absolute system file path of the current note
 
 ## Features
 
-- **Copy Absolute Path**: Copies the full system path (e.g., `/Users/you/vault/Notes/my-note.md`) to the clipboard
+- **Copy Absolute Path**: Copies the full system path (e.g., `/Users/you/vault/Notes/my-note.md` or `C:\Users\you\vault\Notes\my-note.md`) to the clipboard
 - **Command Palette**: Use `Cmd/Ctrl + P` and search for "Copy absolute file path"
 - **Page Header Icon**: Works with the [Commander](https://github.com/phibr0/obsidian-commander) plugin to add a clickable icon in the page header
+- Desktop only (macOS, Windows, Linux)
 
 ## Installation
 
@@ -49,6 +50,8 @@ bun run build
 
 - [Command Overview](https://github.com/BytesAndParty/CommandOverview) - Keep "Copy absolute file path" in a central shortcut overlay.
 - [Auto Categories](https://github.com/BytesAndParty/Obsidian_AutoCategories) - Copy paths from generated category pages for automation or scripting.
+- [Open Vault in VS Code](https://github.com/BytesAndParty/OpenVaultInVSCode) - Open the vault in VS Code, then paste the copied path into Quick Open (`Cmd/Ctrl + P`) to jump straight to the note.
+- [Obsidian Swipe Navigation](https://github.com/BytesAndParty/ObsidianSwipeNavigation) - Swipe back to a previously visited note and copy its path without searching for it.
 
 ## License
 

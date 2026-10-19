@@ -1,5 +1,4 @@
 import { FileSystemAdapter, Notice, Plugin, TFile } from 'obsidian';
-import * as path from 'path';
 
 export default class CopyFilePathPlugin extends Plugin {
 
@@ -27,8 +26,8 @@ export default class CopyFilePathPlugin extends Plugin {
 			return;
 		}
 
-		const vaultPath = adapter.getBasePath();
-		const absolutePath = path.join(vaultPath, file.path);
+		// getFullPath uses the on-disk spelling (e.g. NFD Unicode names) and the OS path separator.
+		const absolutePath = adapter.getFullPath(file.path);
 
 		try {
 			await navigator.clipboard.writeText(absolutePath);
